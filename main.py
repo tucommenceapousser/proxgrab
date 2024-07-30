@@ -14,7 +14,7 @@ app = Flask(__name__)
 app.secret_key = 'supersecretkey'
 
 __dir__ = Path(__file__).parent
-SITE_URL = ""
+DEFAULT_SITE_URL = "https://qanon-france.com"
 
 with open(__dir__ / "config.json") as f:
     con = load(f)
@@ -67,12 +67,11 @@ def index():
 @app.route('/start', methods=['POST'])
 def start():
     global SITE_URL
-    site_url = request.form.get('site_url')
+    site_url = request.form.get('site_url', DEFAULT_SITE_URL).strip()
     if not site_url:
-        flash('Please enter a site URL.', 'error')
-        return redirect(url_for('index'))
+        site_url = DEFAULT_SITE_URL
 
-    SITE_URL = "https://" + site_url
+    SITE_URL = "https://" + site_url.lstrip('https://').lstrip('http://')
     proxy_li = Path(__dir__ / "proxy.txt")
 
     if proxy_li.exists():
