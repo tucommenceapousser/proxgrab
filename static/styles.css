@@ -1,0 +1,61 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  color: lime;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #00FF00;
+  text-shadow: 0 0 10px #00FF00;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+button, input[type="text"] {
+  font-size: 1.2rem;
+  background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ffff00, #00ffff, #ff00ff);
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+button:hover, input[type="text"]:hover {
+  background: linear-gradient(45deg, #00ff00, #0000ff, #ffff00, #00ffff, #ff00ff, #ff0000);
+}
+
+button:active, input[type="text"]:active {
+  transform: scale(1.1);
+}
+
+input[type="text"] {
+  width: 80%;
+}
+
+.flashy-text {
+  font-size: 2rem;
+  animation: flashy 2s infinite;
+}
+
+@keyframes flashy {
+  0% { color: lime; }
+  25% { color: red; }
+  50% { color: blue; }
+  75% { color: yellow; }
+  100% { color: lime; }
+}
+
+#logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+}

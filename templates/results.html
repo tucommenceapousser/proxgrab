@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Grabber - Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="{{ url_for('static', filename='logo.svg') }}" alt="Logo">
+        <h1 class="flashy-text">Results</h1>
+        {% if proxies %}
+            <h2>Proxies Found:</h2>
+            <ul>
+                {% for proxy in proxies %}
+                    <li>{{ proxy }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <h2>No Proxies Found</h2>
+        {% endif %}
+        <a href="{{ url_for('index') }}"><button>Go Back</button></a>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

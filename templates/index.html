@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Grabber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="{{ url_for('static', filename='logo.svg') }}" alt="Logo">
+        <h1 class="flashy-text">Proxy Grabber</h1>
+        <h2>Enter the site URL to check proxies</h2>
+        <form action="{{ url_for('start') }}" method="post">
+            <input type="text" name="site_url" placeholder="https://example.com">
+            <button type="submit">Start</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
