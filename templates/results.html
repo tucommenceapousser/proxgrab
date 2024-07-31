@@ -40,11 +40,13 @@
         <h1 class="flashy-text">Results</h1>
         {% if proxies %}
             <h2>Proxies Found:</h2>
-            <ul>
+            <ul id="proxy-list">
                 {% for proxy in proxies %}
                     <li>{{ proxy }}</li>
                 {% endfor %}
             </ul>
+            <button id="copy-button">Copy to Clipboard</button>
+            <button id="download-button">Download as .txt</button>
         {% else %}
             <h2>No Proxies Found</h2>
         {% endif %}
