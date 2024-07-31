@@ -80,7 +80,9 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## 💬 Contact
 
-For questions or feedback, reach out to [MrG3P5](https://github.com/MrG3P5) on GitHub.
+For questions or feedback, reach out to:
+[MrG3P5](https://github.com/MrG3P5) on GitHub.
+[trhacknon](https://github.com/tucommenceapousser) on GitHub.
 
 <p align="center">
 <img src="https://img.shields.io/badge/Powered%20by%20Flask-000000?style=for-the-badge&logo=flask" alt="Flask Badge"/>
