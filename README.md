@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/MrG3P5"><img title="Author" src="https://img.shields.io/badge/Author-MrG3P5-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/tucommenceapousser"><img title="Author" src="https://img.shields.io/badge/Author-MrG3P5-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <br>
@@ -58,7 +58,7 @@ python3 main.py
 
 ## 🖼️ Preview
 
-![index](https://raw.githubusercontent.com/MrG3P5/Proxy-Grabber/main/Screenshot_2023-06-14_21_28_26.png)
+![index](https://github.com/tucommenceapousser/proxgrab/raw/main/Screenshot_2024-07-30-23-57-06-751_com.android.chrome.jpg)
 
 ## 🔧 Configuration
 
