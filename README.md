@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/tucommenceapousser"><img title="Author" src="https://img.shields.io/badge/Author-MrG3P5-red.svg?style=for-the-badge&logo=github"></a>
+<a href="https://github.com/tucommenceapousser"><img title="Author" src="https://img.shields.io/badge/Author-TrhAckNon-purple.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 <br>
