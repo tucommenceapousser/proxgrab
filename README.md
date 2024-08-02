@@ -55,7 +55,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 ---
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="Fun GIF" width="200" height="200"/>
+  <img src="https://i.gifer.com/81RG.gif" alt="Fun GIF" width="200" height="200"/>
 </p>
 
 <p align="center">
