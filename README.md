@@ -5,7 +5,7 @@
 <h1 align="center">Proxy-Grabber</h1>
 
 <p align="center">
-  <a href="https://github.com/MrG3P5"><img title="Author" src="https://img.shields.io/badge/Author-X MrG3P5-red.svg?style=for-the-badge&logo=github"></a>
+  <a href="https://github.com/MrG3P5"><img title="Author" src="https://img.shields.io/badge/Author-X Trhacknon-red.svg?style=for-the-badge&logo=github"></a>
 </p>
 
 ---
