@@ -10,6 +10,7 @@ pytz = "^2024.1"
 requests = "^2.32.3"
 flask = "^3.0.3"
 pyroxy = "^0.1"
+python-dotenv = "^1.0.1"
 
 [tool.pyright]
 # https://github.com/microsoft/pyright/blob/main/docs/configuration.md

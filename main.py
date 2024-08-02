@@ -9,12 +9,18 @@ from PyRoxy import Proxy, ProxyChecker, ProxyType, ProxyUtiles
 from requests import get, exceptions
 from contextlib import suppress
 import os
+from dotenv import load_dotenv
+
+# Charge les variables d'environnement à partir du fichier .env
+load_dotenv()
+
 
 app = Flask(__name__)
-app.secret_key = 'supersecretkey'
+# app.secret_key = 'supersecretkey'
+app.secret_key = os.getenv('SECRET_KEY', 'default_secret_key')
 
 __dir__ = Path(__file__).parent
-SITE_URL = ""
+DEFAULT_SITE_URL = "https://qanon-france.com"
 
 with open(__dir__ / "config.json") as f:
     con = load(f)
@@ -67,12 +73,11 @@ def index():
 @app.route('/start', methods=['POST'])
 def start():
     global SITE_URL
-    site_url = request.form.get('site_url')
+    site_url = request.form.get('site_url', DEFAULT_SITE_URL).strip()
     if not site_url:
-        flash('Please enter a site URL.', 'error')
-        return redirect(url_for('index'))
+        site_url = DEFAULT_SITE_URL
 
-    SITE_URL = "https://" + site_url
+    SITE_URL = "https://" + site_url.lstrip('https://').lstrip('http://')
     proxy_li = Path(__dir__ / "proxy.txt")
 
     if proxy_li.exists():
@@ -104,4 +109,4 @@ def handleProxyList(con, proxy_li, proxy_ty):
     return proxies
 
 if __name__ == '__main__':
-    app.run(debug=False,)
+    app.run(host='0.0.0.0', port=5000)

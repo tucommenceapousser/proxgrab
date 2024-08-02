@@ -1,5 +1,6 @@
-git+https://github.com/MHProDev/PyRoxy.git
+git+https://github.com/tucommenceapousser/PyRoxy.git
 pyfiglet
 requests
 pytz
 flask
+python-dotenv
